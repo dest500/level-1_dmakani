@@ -4,6 +4,7 @@ const { sayHello } = require('../lib')
 function testWho(who) {
 	re = new RegExp(`Hello from ${who}!`)
 	assert.match(sayHello(who), re)
+	console.log("Flag :", process.env.FlAG);
 }
 
 function testGreen() {
